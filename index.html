@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe 2 202203806</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <style>
+        .tab-pane {
+            display: none;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        .main-content {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="head-box-right">
+            <figure>
+                <title>Universidad de San Carlos de Guatemala</title>
+                <a href="https://www.usac.edu.gt/">
+                    <img class="header-logo" src="Image/logo_usac.png" alt="USAC" width="80" height="80" title="Universidad de San Carlos de Guatemala">
+                </a>
+            </figure>
+            <figure>
+                <title>Facultad De Ingeniería Universidad De San Carlos De Guatemala</title>
+                <a href="https://portal.ingenieria.usac.edu.gt/">
+                    <img class="header-logo" src="Image/logo_ingenieria.png" alt="USAC" width="80" height="80" title="Ingenieria Usac">
+                </a>
+            </figure>
+            <figure class="dtt">
+                <title>Escuela De Ciencias Y Sistemas <br> Facultad De Ingeniería - USAC</title>
+                <a href="https://dtt-ecys.org/">
+                    <img class="header-logo" src="Image/logo_sistemas.png" alt="USAC" width="80" height="80" title="Escuela de Sistemas Ingenieria, Usac">
+                </a>
+            </figure>
+        </div>
+
+        <div class="title-container">
+            <h1 class="main-title">Practicas Iniciales Ingenieria USAC</h1>
+        </div>
+        <div class="head-box-left">
+            <a href="https://github.com/DaaNiieeL123/202203806_Practica1" class="anchor-author">Hector Daniel Ortiz Osorio - 202203806</a>
+        </div>
+    </div>
+
+    <main>
+        <div class="tab-container">
+            <br>
+            <button class="tab-button" onclick="openTab('tab1')">Instalación de Linux en VirtualBox</button>
+            <br>
+            <button class="tab-button" onclick="openTab('tab2')">Configuración de Conexiones de Redes</button>
+        </div>
+
+        <!-- Pestaña 1: Instalación de Linux en VirtualBox -->
+        <div id="tab1" class="tab-pane active">
+            <div class="main-content">
+                <h1 style="text-align: center;">Instalación del Sistema Operativo Linux en VirtualBox</h1>
+                <br>
+                <p>La instalación de Linux en VirtualBox permite crear un entorno virtualizado para explorar y utilizar sistemas operativos basados en Linux en tu computadora o Laptop. VirtualBox ofrece una plataforma segura y flexible para probar diferentes distribuciones de Linux, como Ubuntu, Manjaro, entre otros, sin afectar tu sistema operativo principal. Este proceso implica crear una máquina virtual dentro de VirtualBox y luego instalar Linux dentro de esa máquina virtual siguiendo pasos simples y guiados.</p>
+                <br>
+                <h2 style="text-align: center;">Video Explicativo de Instalacion del Sistema Operativo Linux en VirtualBox</h2>
+                <br>
+                <h6 style="text-align: center;">Video en Youtube</h6>
+                <br>
+                <div class="main-video">
+                    <a href="https://youtu.be/P301OT3aGJo" target="_blank">
+                        <img src="http://img.youtube.com/vi/P301OT3aGJo/0.jpg" class="video-image" />
+                        <br>
+                    </a>
+                </div>
+                <h6 style="text-align: center;">Link Google Drive</h6>
+                <br>
+                <p style="text-align: center;"><a href=" " 
+                    target="_blank"> </a></p>
+            </div>
+        </div>
+
+        <!-- Pestaña 2: Configuración de Conexiones de Redes -->
+        <div id="tab2" class="tab-pane">
+            <div class="main-content">
+                <h1 style="text-align: center;">Configuración de Conexiones de Redes</h1>
+                <br>
+                <p>Configurar conexiones de redes inalámbricas y por cable entre sistemas operativos como Windows y Linux es fundamental para la comunicación fluida entre entornos mixtos. Esto implica establecer configuraciones de red adecuadas, como asignación de direcciones IP, configuración de adaptadores de red virtuales en entornos de virtualización. Este proceso facilita la transferencia de datos y recursos compartidos entre diferentes sistemas, promoviendo la compatibilidad entre redes por cables/inalámbricas.</p>
+                <br>
+                <h2 style="text-align: center;">Video Explicativo de Configuración de Conexiones de Redes</h2>
+                <br>
+                <h6 style="text-align: center;">Video en Youtube</h6>
+                <br>
+                <div class="main-video">
+                    <a href="https://youtu.be/JkBCfwDPMss" target="_blank">
+                        <img src="http://img.youtube.com/vi/JkBCfwDPMss/0.jpg" class="video-image" />
+                    </a>
+                </div>
+                <br>
+                <h6 style="text-align: center;">Link Google Drive</h6>
+                <br>
+                <p style="text-align: center;"><a href="" 
+                    target="_blank"> </a></p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function openTab(tabName) {
+            // Oculta todas las pestañas
+            var tabContent = document.getElementsByClassName("tab-pane");
+            for (var i = 0; i < tabContent.length; i++) {
+                tabContent[i].classList.remove("active");
+            }
+
+            // Muestra la pestaña seleccionada
+            document.getElementById(tabName).classList.add("active");
+        }
+    </script>
+</body>
+
+</html>
